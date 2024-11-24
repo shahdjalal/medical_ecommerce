@@ -120,3 +120,46 @@ var swiper3 = new Swiper(".mySwiper2", {
       dynamicBullets: true,
     },
   });
+
+
+  //modal
+  
+
+function openModal(){
+
+  const modal = document.querySelector(".my_modal");
+  const imagepreview = document.querySelector(".image-preview")
+  const closeBtn = document.querySelector(".close-btn");
+  const eyeIcon = document.querySelector(".eye");
+  
+  const modalImage = document.querySelector(".modal-img")
+
+  
+
+  eyeIcon.addEventListener("click", () => {
+    modal.classList.remove("d-none");
+  
+    // modalImage.src=imagepreview.src;
+// Or aonother way
+          modal.querySelector(" .modal-img").setAttribute("src",imagepreview.src)
+  }
+  
+ 
+  );
+
+
+
+  
+
+
+
+
+  closeBtn.addEventListener("click", function(){
+
+    modal.classList.add ("d-none")
+
+
+  })
+
+}
+
